@@ -1,0 +1,70 @@
+/* --- Estilos Generales --- */
+body {
+    font-family: sans-serif; /* Una fuente estándar fácil de leer */
+    background-color: #f8f9fa; /* Color de fondo suave */
+    display: flex; /* Para manejar el pie de página */
+    flex-direction: column; /* Elementos en columna */
+    min-height: 100vh; /* Altura mínima para que el body ocupe toda la pantalla */
+}
+
+h2 {
+    color: #0056b3; /* Color azul oscuro para los títulos principales */
+    margin-bottom: 1.5rem; /* Espacio debajo de los títulos H2 */
+}
+
+/* --- Barra de Navegación --- */
+/* Estilo específico usando el ID */
+#barra-navegacion-principal {
+    background-color: #ffffff !important; /* Fondo blanco para la barra */
+    border-bottom: 1px solid #dee2e6; /* Línea sutil debajo */
+}
+
+/* --- Carrusel --- */
+#carrusel-principal .carousel-item img {
+    max-height: 300px; /* Altura máxima para las imágenes del carrusel */
+    object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin deformarse */
+}
+
+#carrusel-principal .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para el texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno */
+}
+
+/* --- Tarjetas de Producto --- */
+/* Estilo específico usando la clase */
+.tarjeta-producto {
+    border: 1px solid #ddd; /* Borde gris claro */
+    transition: transform 0.2s ease-in-out; /* Transición suave para el efecto hover */
+}
+
+.tarjeta-producto:hover {
+    transform: scale(1.03); /* Efecto de agrandar un poco al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* --- Botones --- */
+/* Modificando la clase estándar de Bootstrap */
+.btn-primary {
+    background-color: #28a745; /* Color verde cooperativo */
+    border-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Verde un poco más oscuro al pasar el mouse */
+    border-color: #1e7e34;
+}
+
+/* --- Contenido y Pie de Página --- */
+/* Asegura que el contenido principal empuje el pie de página hacia abajo */
+.container.my-5 {
+    flex: 1; /* Permite que el contenedor crezca y empuje el footer */
+}
+
+/* Estilo para la etiqueta footer */
+footer {
+    background-color: #e9ecef !important; /* Fondo gris claro para el pie de página */
+    border-top: 1px solid #dee2e6; /* Línea superior */
+}
+
+
